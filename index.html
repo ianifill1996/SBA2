@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ian Ifill" />
+    <meta name="description" content="Accessible Website Project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Design Co</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header class="navbar" role="banner">
+        <div class="logo">Accessible Design Co</div>
+        <nav role="navigation" aria-label="Main navigation" class="nav-links">
+          <a href="#" aria-label="Home Page">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content" role="main">
+        <section id="about" class="card" aria-labelledby="about-heading"></sectionid>
+            <h2 id="services-headingOur Services"></h2>
+            <p>Accessibility audits, consulting, and full design services available.</p>
+            <img src="https://media.istockphoto.com/id/1333651601/vector/accessibility-icon-set.jpg?s=612x612&w=0&k=20&c=y_hTdYd-aIBTwrtRZDI5uDXLqfOAHl9LPTiyNQhCghI=" alt="acessibiliy icons" />
+          </section>
+      
+          <section id="contact" class="card" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Join Us</h2>
+            <form aria-labelledby="join-form-title">
+              <h3 id="join-form-title">Sign up</h3>
+      
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" aria-describedby="emailHelp" required />
+              <div id="emailHelp">We'll never share your email with anyone else.</div>
+      
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" required aria-describedby="passwordInstructions" />
+              <div id="passwordInstructions">Must be at least 8 characters.</div>
+      
+              <button type="submit">Submit</button>
+      
+              <div id="formFeedback" role="alert" aria-live="polite"></div>
+            </form>
+          </section>
+        </main>
+      
+        <footer class="footer" role="contentinfo">
+          <p>© 2025 Accessible Design Co. All rights reserved.</p>
+        </footer>
+      
+      </body>
+      
+      </html>

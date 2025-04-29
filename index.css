@@ -1,0 +1,138 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #1a1a1a; /* Very dark text on white background => High contrast */
+}
+
+/* Navbar with accessible contrast */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003366; /* Dark blue background */
+    padding: 1rem;
+    color: #ffffff; /* White text */
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    padding: 0.3rem 0.5rem;
+}
+
+/* Focus state for links */
+.nav-links a:focus,
+.nav-links a:hover {
+    outline: 3px solid #00ffcc; /* Bright visible outline */
+    outline-offset: 2px;
+    background-color: #002244;
+    border-radius: 5px;
+}
+
+/* Main Content Area - CSS Grid */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Cards styling */
+.card {
+    background-color: #f9f9f9;
+    color: #333333; /* Good contrast */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Focus state for inputs */
+input[type="email"]:focus,
+input[type="password"]:focus,
+button:focus {
+    outline: 3px solid #00ffcc;
+    outline-offset: 2px;
+    background-color: #e0f7fa;
+}
+
+/* Button Styling */
+button {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* MEDIA QUERIES */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (tablets, less than 1024px) */
+@media (max-width: 1024px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
