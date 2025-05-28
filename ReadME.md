@@ -1,26 +1,34 @@
-## Project Overview
-This project is a fully responsive and accessible website designed with inclusivity and usability in mind. It implements semantic HTML, accessible forms, proper heading structure, and color contrast standards to ensure that users of all abilities—including those who use screen readers or keyboard navigation—can navigate and interact with the site effectively.
+# 🌐 Accessible & Responsive Web Design
 
-## Key Accessibility Features
+This project is a fully responsive and accessible website built with a focus on inclusivity and usability. It applies modern HTML and CSS practices to ensure compatibility across devices and full accessibility for users with disabilities.
 
-### Semantic HTML
-- Uses `<header>`, `<main>`, `<nav>`, `<section>`, `<article>`, and `<footer>` for meaningful structure.
-- Provides better screen reader support and SEO by giving context to each part of the page.
+## ✅ Key Features
 
-### Responsive Design
-- Utilizes **Flexbox** and **media queries** to adapt layouts for mobile, tablet, and desktop screens.
-- Ensures a consistent user experience across devices.
+### 🧱 Semantic HTML Structure
+- Utilizes elements like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` for meaningful page hierarchy.
+- Enhances both SEO and screen reader compatibility.
 
-### Visual Accessibility
-- All text and background color combinations meet or exceed WCAG 2.1 **AA contrast ratio** standards (4.5:1 for normal text).
-- No information is conveyed by color alone—icons or text labels are used to support visual cues.
+### 📱 Responsive Layout
+- Designed with **Flexbox** and **media queries** to adapt seamlessly across mobile, tablet, and desktop views.
+- Ensures consistent layout and user experience across all screen sizes.
 
-### Screen Reader & Keyboard Support
-- All interactive elements (links, buttons, inputs) are reachable via keyboard.
-- Includes appropriate ARIA roles and attributes (where necessary).
-- Headings (`<h1>`, `<h2>`, etc.) follow a clear and logical order to help screen reader navigation.
+### 🎨 Visual Accessibility
+- All color combinations meet **WCAG 2.1 AA** standards for contrast.
+- Visual information is reinforced with text or icons—never color alone.
 
-### Forms
-- Inputs are paired with `<label>` elements using `for` and `id` attributes.
-- Related fields are grouped with `<fieldset>` and `<legend>` for context.
-- Placeholders are used to guide input but not relied on for labeling.
+### 🗣️ Screen Reader & Keyboard Support
+- Full navigation using keyboard (Tab, Enter, etc.) is supported.
+- Uses appropriate ARIA roles and attributes where needed.
+- Logical heading structure (`<h1>`, `<h2>`, etc.) guides assistive technology.
+
+### 📝 Form Accessibility
+- Every input is linked to a `<label>` for screen reader clarity.
+- Related form controls are grouped using `<fieldset>` and `<legend>`.
+- Placeholder text supplements, but does not replace, proper labels.
+
+## 💼 Use in Portfolio or Resume
+
+This project demonstrates:
+- Attention to inclusive design standards (WCAG, ARIA)
+- Strong front-end development skills in HTML5 and CSS3
+- UX considerations for all users, including those using assistive technologies
